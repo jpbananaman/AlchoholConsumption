@@ -51,20 +51,34 @@
   <p>Tap an icon to add a drink</p>
 </header>
     <script type="text/javascript">
-    var clicks = 0;
-    function onClick() {
-        clicks += 1;
-        document.getElementById("clicks").innerHTML = clicks;
+    var mixclicks = 0;
+    function onClickmix() {
+        mixclicks += 1;
+        document.getElementById("mixclicks").innerHTML = mixclicks;
+    };
+    </script>
+    <script type="text/javascript">
+    var beerclicks = 0;
+    function onClickbeer() {
+        beerclicks += 1;
+        document.getElementById("beerclicks").innerHTML = beerclicks;
+    };
+    </script>
+    <script type="text/javascript">
+    var shotclicks = 0;
+    function onClickshot() {
+        shotclicks += 1;
+        document.getElementById("shotclicks").innerHTML = shotclicks;
     };
     </script>
  <div class="container text-align-center"> 
   <ul>
     <!--selected items have class 'focus'-->
-    <button type="button" onClick="onClick()" class="button"><h3>MIXERS: <a id="clicks">0</a></h3><img src="http://www.i2clipart.com/cliparts/d/2/d/b/clipart-drinking-glass-icon-512x512-d2db.png" width="50"></button>
+    <button type="button" onClick="onClickmix()" class="button"><h3>MIXERS: <a id="mixclicks">0</a></h3><img src="http://www.i2clipart.com/cliparts/d/2/d/b/clipart-drinking-glass-icon-512x512-d2db.png" width="50"></button>
     
-    <button type="button" onClick="onClick()" class="button"><h3>BEER: <a id="clicks">0</a></h3><img src="https://cdn.pixabay.com/photo/2014/04/03/10/23/bottle-310313_960_720.png" width="50"></button>
+    <button type="button" onClick="onClickbeer()" class="button"><h3>BEER: <a id="beerclicks">0</a></h3><img src="https://cdn.pixabay.com/photo/2014/04/03/10/23/bottle-310313_960_720.png" width="50"></button>
       
-    <button type="button" onClick="onClick()" class="button"><h3>SHOTS: <a id="clicks">0</a></h3><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Pony_Glass_Silhouette.svg/1000px-Pony_Glass_Silhouette.svg.png" width="50"></button>
+    <button type="button" onClick="onClickshot()" class="button"><h3>SHOTS: <a id="shotclicks">0</a></h3><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Pony_Glass_Silhouette.svg/1000px-Pony_Glass_Silhouette.svg.png" width="50"></button>
       
     <button id="myBtn" class="button"><h3>ADD NEW DRINK</h3><img src="http://cdn.onlinewebfonts.com/svg/img_202916.png" width="50"></button>
       <!-- The Modal -->
@@ -78,13 +92,10 @@
     </div>
     <div class="modal-body">
       <form action="addDrink.html">
-        Drink Type: <input type="text" name="Drink Name" autofocus><br>
+        Drink ABV: <input type="text" name="Drink Name" autofocus><br>
         Price: <input type="text" name="Price"><br>
         <input type="submit">
         </form>
-    </div>
-    <div class="modal-footer">
-      <h3>Modal Footer</h3>
     </div>
   </div>
       </div>
@@ -117,8 +128,10 @@ window.onclick = function(event) {
     }
 }
 </script>
-  
+    <div style="text-align-center">
+    <h3>Total Spent: N/A</h3>
     <h1>BAC: N/A</h1>
+    </div>
 </div>
             
             </div>

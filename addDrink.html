@@ -5,10 +5,10 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+        <link rel="stylesheet" type="text/css" href="design.css">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-     
+        
     </head>
     
     <body>
@@ -43,8 +43,85 @@
                     </div>
                 </div>
             </div>
+            <div> <!--drink selection-->
+
+<div class="container" style="text-align:center">
+<header>
+  <h1>Drink Selection</h1>
+  <p>Tap an icon to add a drink</p>
+</header>
+    <script type="text/javascript">
+    var clicks = 0;
+    function onClick() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+    </script>
+ <div class="container text-align-center"> 
+  <ul>
+    <!--selected items have class 'focus'-->
+    <button type="button" onClick="onClick()" class="button"><h3>MIXERS: <a id="clicks">0</a></h3><img src="http://www.i2clipart.com/cliparts/d/2/d/b/clipart-drinking-glass-icon-512x512-d2db.png" width="50"></button>
+    
+    <button type="button" onClick="onClick()" class="button"><h3>BEER: <a id="clicks">0</a></h3><img src="https://cdn.pixabay.com/photo/2014/04/03/10/23/bottle-310313_960_720.png" width="50"></button>
+      
+    <button type="button" onClick="onClick()" class="button"><h3>SHOTS: <a id="clicks">0</a></h3><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Pony_Glass_Silhouette.svg/1000px-Pony_Glass_Silhouette.svg.png" width="50"></button>
+      
+    <button id="myBtn" class="button"><h3>ADD NEW DRINK</h3><img src="http://cdn.onlinewebfonts.com/svg/img_202916.png" width="50"></button>
+      <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>ADD NEW DRINK</h2>
+    </div>
+    <div class="modal-body">
+      <form action="addDrink.html">
+        Drink Type: <input type="text" name="Drink Name" autofocus><br>
+        Price: <input type="text" name="Price"><br>
+        <input type="submit">
+        </form>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+      </div>
+</ul>
+    </div>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+  
+    <h1>BAC: N/A</h1>
+</div>
             
-             
+            </div>
         </div>
         
     

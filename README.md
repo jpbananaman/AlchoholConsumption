@@ -1,4 +1,4 @@
 # AlchoholConsumption
-App for tracking spending and consumption of alcohol
-Group 14
+# App for tracking spending and consumption of alcohol
+# Group 14
 

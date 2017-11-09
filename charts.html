@@ -25,6 +25,8 @@
                     <div class = "page-header">
                         <!-- Header -->
                     </div>
+                    
+                    
                 </div>
             </div>
             
@@ -46,9 +48,54 @@
             
              
         </div>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> <!-- MADE USING THE GOOGLE CHARTS API -->
+            <script type="text/javascript">
+              google.charts.load('current', {'packages':['corechart']});
+              google.charts.setOnLoadCallback(drawChart);
+
+              function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                  ['Day', 'Money Spent ($)'],
+                  ['Monday',  15],
+                  ['Tuesday',  0],
+                  ['Wednesday',  0],
+                  ['Thursday',  25],
+                  ['Friday', 43.50],
+                  ['Saturday', 60],
+                  ['Sunday', 0]
+
+                ]);
+
+                var options = {
+                  title: 'Costs of the Week',
+                  curveType: '',
+                  dataOpacity: 1.0,
+                  pointsVisible: true,
+                  
+
+                  legend: { position: 'bottom' },
+
+                };
+
+                var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+                chart.draw(data, options);
+              }
+            </script>
+        
+      
+      
+        <div align="center">
+            <div id="curve_chart" style="width: 750px; height: 500px"></div>
+        </div>
+        
+            
+        
+        
         
     
     </body>
     
     
  </html>
+

@@ -2,20 +2,20 @@
 <html>
     
     <head>
+  
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <title>User Profile</title>
         
     </head>
     
     <body>
         <style>
-            body{
-                background-color: #33C2FF;
-            }
+            body{background-color: #33C2FF;}
             
         </style>
         <div class= "container">
@@ -24,6 +24,7 @@
                 <div class= "col-xs-12">
                     <div class = "page-header">
                         <!-- Header -->
+                        
                     </div>
                 </div>
             </div>
@@ -33,7 +34,7 @@
                     <div class="container">
                         <!-- Menu -->
                         <ul class="nav nav-pills">
-                            <li class="nav-item"><a class = "nav-link" href="alcoholConsumption.html">Home</a></li> 
+                            <li class="nav-item"><a class = "nav-link" href="alcoholConsumption.hmtl">Home</a></li> 
                             <li class="nav-item"><a class = "nav-link" href="addDrink.html">Add Drink</a></li>
                             <li class="nav-item"><a class = "nav-link" href="charts.html">Charts</a></li>   
                             <li class="nav-item"><a class = "nav-link" href="log.html">Log</a></li>   
@@ -44,10 +45,57 @@
                 </div>
             </div>
             
-             
+            <div class = "row-center">
+                <div  class="col-sm-9 col-xs-12"> 
+                <!-- Main Content -->
+                
+                <p><center><font size= "+10" >Profile</font></center></p> 
+                </div>
+            <style>
+                table {font-family: arial, sans-serif; border-collapse: collapse; width: 100%;}
+                td, th {border: 1px solid #dddddd;text-align: left;padding: 8px;}
+                tr:nth-child(even) {background-color: #dddddd;}
+            </style>
+                <center>
+                    <table>
+                        <tr bgcolor=#F0F3F4>
+                            <th>Name:</th>
+                            <td>John Doe</td>
+                        </tr>
+                        <tr>
+                            <th>Age:</th>
+                            <td>21</td>
+                        </tr>
+                        <tr bgcolor=#F0F3F4>
+                            <th> Date of Birth:</th>
+                            <td>October 27, 1996</td>
+                        </tr>
+                        <tr>
+                            <th>Height:</th>
+                            <td>6'0"</td>
+                        </tr>
+                        <tr bgcolor=#F0F3F4>
+                            <th>Weight:</th>
+                            <td>160lbs</td>
+                        </tr>
+                        <tr>
+                            <th>Sex:</th>
+                            <td>Male</td>   
+                        </tr>
+                    </table>
+                </center>
+            <style>
+                button{width: 25%; height: 75%;}
+                
+            </style>
+                <center>
+                    <button class="btn btn-primary" type="button" >Edit Profile</button>
+                    <button class="btn btn-primary" type="button">Sign Out</button>
+                </center>    
+
+            </div>     
         </div>
         
-    
     </body>
     
     

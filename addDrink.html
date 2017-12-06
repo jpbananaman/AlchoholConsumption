@@ -14,7 +14,7 @@
     <body>
         <style>
             body{
-                background-color: #33C2FF;
+                background-color: #FFFFFF;
             }
             
         </style>
@@ -52,33 +52,45 @@
 </header>
     <script type="text/javascript">
     var mixclicks = 0;
+    var mixmoney = 0;
     function onClickmix() {
         mixclicks += 1;
+        mixmoney += 4;
         document.getElementById("mixclicks").innerHTML = mixclicks;
+        document.getElementById("total").innerHTML = mixmoney;
     };
     </script>
     <script type="text/javascript">
     var beerclicks = 0;
+    var beermoney = 0;
+    var bac = 0.00;
     function onClickbeer() {
         beerclicks += 1;
+        beermoney += 3;
+        bac += 0.04;
         document.getElementById("beerclicks").innerHTML = beerclicks;
+        document.getElementById("total").innerHTML = beermoney;
+        document.getElementById("bac").innerHTML = bac;
     };
     </script>
     <script type="text/javascript">
     var shotclicks = 0;
+    var shotmoney = 0;
     function onClickshot() {
         shotclicks += 1;
+        shotmoney += 4;
         document.getElementById("shotclicks").innerHTML = shotclicks;
+        document.getElementById("total").innerHTML = shotmoney;
     };
     </script>
  <div class="container text-align-center"> 
   <ul>
     <!--selected items have class 'focus'-->
-    <button type="button" onClick="onClickmix()" class="button"><h3>MIXERS: <a id="mixclicks">0</a></h3><img src="http://www.i2clipart.com/cliparts/d/2/d/b/clipart-drinking-glass-icon-512x512-d2db.png" width="50"></button>
+    <button type="button" onClick="onClickmix()" class="button"><h3>$4 MIXERS: <a id="mixclicks">0</a></h3><img src="http://www.i2clipart.com/cliparts/d/2/d/b/clipart-drinking-glass-icon-512x512-d2db.png" width="50"></button>
     
-    <button type="button" onClick="onClickbeer()" class="button"><h3>BEER: <a id="beerclicks">0</a></h3><img src="https://cdn.pixabay.com/photo/2014/04/03/10/23/bottle-310313_960_720.png" width="50"></button>
-      
-    <button type="button" onClick="onClickshot()" class="button"><h3>SHOTS: <a id="shotclicks">0</a></h3><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Pony_Glass_Silhouette.svg/1000px-Pony_Glass_Silhouette.svg.png" width="50"></button>
+    <button type="button" onClick="onClickbeer()" class="button"><h3>$3 BEER: <a id="beerclicks">0</a></h3><img src="https://cdn.pixabay.com/photo/2014/04/03/10/23/bottle-310313_960_720.png" width="50"></button>
+    
+    <button type="button" onClick="onClickshot()" class="button"><h3>$4 SHOTS: <a id="shotclicks">0</a></h3><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Pony_Glass_Silhouette.svg/1000px-Pony_Glass_Silhouette.svg.png" width="50"></button>
       
     <button id="myBtn" class="button"><h3>ADD NEW DRINK</h3><img src="http://cdn.onlinewebfonts.com/svg/img_202916.png" width="50"></button>
       <!-- The Modal -->
@@ -129,10 +141,12 @@ window.onclick = function(event) {
 }
 </script>
     <div style="text-align-center">
-    <h3>Total Spent: N/A</h3>
-    <h1>BAC: N/A</h1>
+        <h3>Total Spent:<br>$<a type = "text" id = "total" value="0">0</a></h3>
+        
+    <h1>BAC: <br><a type = "text" id = "bac" value ="0.00"> 0.00</a></h1>
     </div>
 </div>
+
             
             </div>
         </div>
@@ -142,3 +156,4 @@ window.onclick = function(event) {
     
     
  </html>
+

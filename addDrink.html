@@ -52,35 +52,42 @@
 </header>
     <script type="text/javascript">
     var mixclicks = 0;
-    var mixmoney = 0;
+    var money = 0;
+    var bac = 0.00;
     function onClickmix() {
         mixclicks += 1;
-        mixmoney += 4;
+        money += 4;
+        bac += 0.04;
         document.getElementById("mixclicks").innerHTML = mixclicks;
-        document.getElementById("total").innerHTML = mixmoney;
+        document.getElementById("total").innerHTML = money;
+        document.getElementById("bac").innerHTML = bac;
+
     };
     </script>
     <script type="text/javascript">
     var beerclicks = 0;
-    var beermoney = 0;
+    var money = 0;
     var bac = 0.00;
     function onClickbeer() {
         beerclicks += 1;
-        beermoney += 3;
+        money += 3;
         bac += 0.04;
         document.getElementById("beerclicks").innerHTML = beerclicks;
-        document.getElementById("total").innerHTML = beermoney;
+        document.getElementById("total").innerHTML = money;
         document.getElementById("bac").innerHTML = bac;
     };
     </script>
     <script type="text/javascript">
     var shotclicks = 0;
-    var shotmoney = 0;
+    var money = 0;
+    var bac = 0.00;
     function onClickshot() {
         shotclicks += 1;
-        shotmoney += 4;
+        money += 4;
+        bac += 0.04;
         document.getElementById("shotclicks").innerHTML = shotclicks;
-        document.getElementById("total").innerHTML = shotmoney;
+        document.getElementById("total").innerHTML = money;
+        document.getElementById("bac").innerHTML = bac;
     };
     </script>
  <div class="container text-align-center"> 
@@ -156,4 +163,3 @@ window.onclick = function(event) {
     
     
  </html>
-

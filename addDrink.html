@@ -60,7 +60,7 @@
         bac += 0.04;
         document.getElementById("mixclicks").innerHTML = mixclicks;
         document.getElementById("total").innerHTML = money;
-        document.getElementById("bac").innerHTML = bac;
+        document.getElementById("bac").innerHTML = bac.toFixed(2);
 
     };
     </script>
@@ -74,20 +74,20 @@
         bac += 0.04;
         document.getElementById("beerclicks").innerHTML = beerclicks;
         document.getElementById("total").innerHTML = money;
-        document.getElementById("bac").innerHTML = bac;
+        document.getElementById("bac").innerHTML = bac.toFixed(2);
     };
     </script>
     <script type="text/javascript">
     var shotclicks = 0;
     var money = 0;
-    var bac = 0.00;
+    var bac = 0;
     function onClickshot() {
         shotclicks += 1;
         money += 4;
         bac += 0.04;
         document.getElementById("shotclicks").innerHTML = shotclicks;
         document.getElementById("total").innerHTML = money;
-        document.getElementById("bac").innerHTML = bac;
+        document.getElementById("bac").innerHTML = bac.toFixed(2);
     };
     </script>
  <div class="container text-align-center"> 

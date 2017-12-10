@@ -59,28 +59,42 @@
                 <center>
                     <table>
                         <tr bgcolor=#F0F3F4>
+                            <form>
                             <th>Name:</th>
-                            <td>John Doe</td>
+                            <td><br><input type = "text" name = "name" placeholder = "Full Name"></td>
+                            </form>
                         </tr>
                         <tr>
+                            <form>
                             <th>Age:</th>
-                            <td>21</td>
+                            <td><br><input type = "number" name = "age" placeholder = "Age"></td>
+                            </form>
                         </tr>
                         <tr bgcolor=#F0F3F4>
+                            <form>
                             <th> Date of Birth:</th>
-                            <td>October 27, 1996</td>
+                            <td><br><input type = "date" name = "DOB"></td>
+                            </form>
                         </tr>
                         <tr>
+                            <form>
                             <th>Height:</th>
-                            <td>6'0"</td>
+                            <td><br><input type = "number" name = "feet" placeholder="Feet">'<input type = "number" name = "inches" placeholder = "inches">"</td>
+                            </form>
                         </tr>
                         <tr bgcolor=#F0F3F4>
+                            <form>
                             <th>Weight:</th>
-                            <td>160lbs</td>
+                            <td><br><input type = "number" name = "weight" placeholder = "Weight">lbs</td>
+                            </form>
                         </tr>
                         <tr>
+                            <form>
                             <th>Sex:</th>
-                            <td>Male</td>   
+                            <td><br><input type="radio" name="gender" value="male" checked> Male<br>
+                                    <input type="radio" name="gender" value="female"> Female<br>
+                                    <input type="radio" name="gender" value="other"> Other</td> 
+                            </form>
                         </tr>
                     </table>
                 </center>
@@ -89,6 +103,7 @@
                 
             </style>
                 <center>
+                    <button class = "btn btn-primary" type = "submit"> Save</button>
                     <button class="btn btn-primary" type="button" >Edit Profile</button>
                     <button class="btn btn-primary" type="button">Sign Out</button>
                 </center>    
